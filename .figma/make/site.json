@@ -1,0 +1,10 @@
+{
+  "description": "Site da oficina Fumagalli & Undertech na Mooca, apresentando serviços automotivos e facilitando o contato para manutenção, reparos e agendamentos.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
