@@ -120,7 +120,7 @@ function Icon({
   return <svg {...common}>{paths[name]}</svg>
 }
 
-const services: { icon: IconName title: string text: string }[] = [
+const services: { icon: IconName; title: string; text: string }[] = [
   {
     icon: "transmission",
     title: "Fluido de transmissão",
