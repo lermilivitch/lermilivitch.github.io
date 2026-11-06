@@ -1,8 +1,8 @@
 import { useState, type ReactNode } from "react"
 
-const heroImage = "/assets/fachada-undertech.webp"
+const heroImage = "./assets/fachada-undertech.webp"
 
-const workshopImage = "/assets/interior-undertech.jpg"
+const workshopImage = "./assets/interior-undertech.jpg"
 
 const whatsappUrl =
   "https://wa.me/551126940055?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20do%20meu%20ve%C3%ADculo."
