@@ -1,9 +1,9 @@
 import { useState, type ReactNode } from "react"
 
 const githubAssetsBaseUrl =
-  "https://raw.githubusercontent.com/lermilivitch/lermilivitch.github.io/main/assets/"
+  "https://github.com/lermilivitch/lermilivitch.github.io/blob/732fae3553f208dcf30728cca79f52e2adddae31/assets/"
 
-const assetUrl = (fileName: string) => `${githubAssetsBaseUrl}${fileName}`
+const assetUrl = (fileName: string) => `${githubAssetsBaseUrl}${fileName}?raw=1`
 
 const heroImage = assetUrl("fachada-undertech.webp")
 const workshopImage = assetUrl("interior-undertech.jpg")
