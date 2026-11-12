@@ -1,8 +1,10 @@
 import { useState, type ReactNode } from "react"
 
-const heroImage = "./assets/fachada-undertech.webp"
+const assetUrl = (fileName: string) =>
+  `${import.meta.env.BASE_URL}assets/${fileName}`
 
-const workshopImage = "./assets/interior-undertech.jpg"
+const heroImage = assetUrl("fachada-undertech.webp")
+const workshopImage = assetUrl("interior-undertech.jpg")
 
 const whatsappUrl =
   "https://wa.me/551126940055?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20do%20meu%20ve%C3%ADculo."
@@ -174,7 +176,7 @@ export default function App() {
             aria-label="Undertech Tecnologia Automotiva - início"
           >
             <img
-              src="/assets/undertech-logo-cropped.png"
+              src={assetUrl("undertech-logo-cropped.png")}
               alt="Undertech Tecnologia Automotiva"
               className="h-14 w-[154px] rounded-sm object-contain sm:w-[174px]"
             />
@@ -659,7 +661,7 @@ export default function App() {
               aria-label="Undertech Tecnologia Automotiva - início"
             >
               <img
-                src="/assets/undertech-logo-cropped.png"
+                src={assetUrl("undertech-logo-cropped.png")}
                 alt="Undertech Tecnologia Automotiva"
                 className="h-[72px] w-[186px] rounded-sm object-contain"
               />
