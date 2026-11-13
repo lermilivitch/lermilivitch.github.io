@@ -1,9 +1,15 @@
 import { useState, type ReactNode } from "react"
 
-const githubAssetsBaseUrl =
-  "https://github.com/lermilivitch/lermilivitch.github.io/blob/732fae3553f208dcf30728cca79f52e2adddae31/assets/"
+const assetUrls = {
+  "fachada-undertech.webp":
+    "https://drive.google.com/uc?export=view&id=1SykoCNRmQOwFOCws6fFoua2PGJigOxqI",
+  "interior-undertech.jpg":
+    "https://drive.google.com/uc?export=view&id=1f5OvDMq0cSSm5i-__SVu3hWaFZgaXzaj",
+  "undertech-logo-cropped.png":
+    "https://drive.google.com/uc?export=view&id=16xpKp7WWUvs-ueAhbqNtjIyPpsVkZn0M",
+}
 
-const assetUrl = (fileName: string) => `${githubAssetsBaseUrl}${fileName}?raw=1`
+const assetUrl = (fileName: keyof typeof assetUrls) => assetUrls[fileName]
 
 const heroImage = assetUrl("fachada-undertech.webp")
 const workshopImage = assetUrl("interior-undertech.jpg")
@@ -178,7 +184,7 @@ export default function App() {
             aria-label="Undertech Tecnologia Automotiva - início"
           >
             <img
-              src="/assets/undertech-logo-cropped.png"
+              src={assetUrl("undertech-logo-cropped.png")}
               alt="Undertech Tecnologia Automotiva"
               className="h-14 w-[154px] rounded-sm object-contain sm:w-[174px]"
             />
@@ -663,7 +669,7 @@ export default function App() {
               aria-label="Undertech Tecnologia Automotiva - início"
             >
               <img
-                src="/assets/undertech-logo-cropped.png"
+                src={assetUrl("undertech-logo-cropped.png")}
                 alt="Undertech Tecnologia Automotiva"
                 className="h-[72px] w-[186px] rounded-sm object-contain"
               />
