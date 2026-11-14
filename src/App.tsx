@@ -1,5 +1,5 @@
 import { useState, type ReactNode } from "react"
-import fachadaImage from "./assets/fachada-undertech.webp"
+import fachadaImage from "./assets/fachada-undertech.jpeg"
 import interiorImage from "./assets/interior-undertech.jpg"
 import logoImage from "./assets/undertech-logo-cropped.png"
 

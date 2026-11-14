@@ -1,8 +1,8 @@
 import { useState, type ReactNode } from "react"
+import fachadaImage from "../../src/assets/fachada-undertech.jpeg"
 
 const assetUrls = {
-  "fachada-undertech.webp":
-    "https://drive.google.com/uc?export=view&id=1SykoCNRmQOwFOCws6fFoua2PGJigOxqI",
+  "fachada-undertech.jpeg": fachadaImage,
   "interior-undertech.jpg":
     "https://drive.google.com/uc?export=view&id=1f5OvDMq0cSSm5i-__SVu3hWaFZgaXzaj",
   "undertech-logo-cropped.png":
@@ -11,7 +11,7 @@ const assetUrls = {
 
 const assetUrl = (fileName: keyof typeof assetUrls) => assetUrls[fileName]
 
-const heroImage = assetUrl("fachada-undertech.webp")
+const heroImage = assetUrl("fachada-undertech.jpeg")
 const workshopImage = assetUrl("interior-undertech.jpg")
 
 const whatsappUrl =
