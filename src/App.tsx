@@ -12,6 +12,7 @@ const phoneUrl = "tel:+551126940055"
 const instagramUrl = "https://www.instagram.com/fumagallieundertech/"
 const mapsUrl =
   "https://www.google.com/maps/search/?api=1&query=Rua+Orville+Derby%2C+172%2C+Mooca%2C+S%C3%A3o+Paulo%2C+SP"
+const googleReviewsUrl = "https://maps.app.goo.gl/dWH2ZJNemYSTWACE7"
 const mapsEmbedUrl =
   "https://www.google.com/maps?q=Rua%20Orville%20Derby%2C%20172%2C%20Mooca%2C%20S%C3%A3o%20Paulo%2C%20SP&output=embed"
 
@@ -242,17 +243,17 @@ export default function App() {
       <main>
         <section
           id="inicio"
-          className="relative flex min-h-[760px] items-end overflow-hidden bg-[#151515] pt-28 text-white"
+          className="relative flex flex-col overflow-hidden bg-[#151515] text-white lg:min-h-[max(760px,min(61vw,1150px))] lg:items-end lg:pt-28"
         >
           <img
             src={heroImage}
             alt="Fachada da oficina Undertech na Mooca"
-            className="absolute inset-0 h-full w-full object-cover object-[center_bottom] brightness-[0.88] saturate-[0.92]"
+            className="relative h-[82vw] min-h-[280px] max-h-[560px] w-full shrink-0 object-cover object-center brightness-[0.88] saturate-[0.92] lg:absolute lg:inset-0 lg:h-full lg:max-h-none lg:min-h-0 lg:object-[center_bottom]"
           />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,10,10,.58)_0%,rgba(10,10,10,.42)_38%,rgba(10,10,10,.12)_76%),linear-gradient(0deg,rgba(10,10,10,.52)_0%,rgba(10,10,10,.08)_52%,transparent_68%)]" />
+          <div className="absolute inset-x-0 top-0 h-[calc(82vw+2rem)] max-h-[600px] bg-[linear-gradient(180deg,rgba(10,10,10,.12)_0%,transparent_48%,#151515_100%)] lg:inset-0 lg:h-full lg:max-h-none lg:bg-[linear-gradient(90deg,rgba(10,10,10,.58)_0%,rgba(10,10,10,.42)_38%,rgba(10,10,10,.12)_76%),linear-gradient(0deg,rgba(10,10,10,.52)_0%,rgba(10,10,10,.08)_52%,transparent_68%)]" />
           <div className="absolute right-[-90px] top-24 hidden h-80 w-80 rounded-full border-[60px] border-white/[0.04] xl:block" />
 
-          <div className="relative mx-auto grid w-full max-w-7xl gap-12 px-5 pb-16 pt-20 lg:grid-cols-[1fr_360px] lg:px-8 lg:pb-32">
+          <div className="relative mx-auto grid w-full max-w-7xl gap-12 bg-[#151515] px-5 pb-16 pt-8 lg:grid-cols-[1fr_360px] lg:bg-transparent lg:px-8 lg:pb-32 lg:pt-20">
             <div className="max-w-3xl xl:translate-x-12">
               <div className="mb-7 inline-flex items-center gap-2 border-l-2 border-[#eda71e] pl-3 text-xs font-bold uppercase tracking-[0.22em] text-white/70">
                 Oficina especializada na Mooca
@@ -628,6 +629,43 @@ export default function App() {
                   <br />
                   Mooca • São Paulo — SP
                 </p>
+              </div>
+              <div className="mt-8 border-y border-[#292623]/15 py-6">
+                <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#292623]/65">
+                  Avaliações no Google
+                </p>
+                <div className="mt-2 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                  <span className="font-display text-4xl font-extrabold">
+                    4,9
+                  </span>
+                  <span
+                    className="text-lg tracking-[0.12em] text-[#b8790b]"
+                    aria-label="4,9 de 5 estrelas"
+                  >
+                    ★★★★★
+                  </span>
+                  <span className="text-sm text-[#292623]/65">
+                    19 avaliações
+                  </span>
+                </div>
+                <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+                  <a
+                    href={googleReviewsUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center justify-center rounded-sm bg-[#171717] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#333]"
+                  >
+                    Ver avaliações
+                  </a>
+                  <a
+                    href={googleReviewsUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center justify-center rounded-sm border border-[#292623]/25 px-5 py-3 text-sm font-bold transition hover:bg-white"
+                  >
+                    Avaliar no Google
+                  </a>
+                </div>
               </div>
               <a
                 href={mapsUrl}
