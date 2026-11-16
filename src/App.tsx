@@ -247,13 +247,13 @@ export default function App() {
           <img
             src={heroImage}
             alt="Fachada da oficina Undertech na Mooca"
-            className="absolute inset-0 h-full w-full object-cover object-[58%_center] brightness-[0.78] saturate-[0.88]"
+            className="absolute inset-0 h-full w-full object-cover object-left brightness-[0.88] saturate-[0.92] lg:w-[110%] lg:max-w-none"
           />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,10,10,.98)_0%,rgba(10,10,10,.86)_40%,rgba(10,10,10,.28)_76%),linear-gradient(0deg,rgba(10,10,10,.76)_0%,transparent_58%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,10,10,.58)_0%,rgba(10,10,10,.42)_38%,rgba(10,10,10,.12)_76%),linear-gradient(0deg,rgba(10,10,10,.52)_0%,rgba(10,10,10,.08)_52%,transparent_68%)]" />
           <div className="absolute right-[-90px] top-24 hidden h-80 w-80 rounded-full border-[60px] border-white/[0.04] xl:block" />
 
           <div className="relative mx-auto grid w-full max-w-7xl gap-12 px-5 pb-16 pt-20 lg:grid-cols-[1fr_360px] lg:px-8 lg:pb-20">
-            <div className="max-w-3xl">
+            <div className="max-w-3xl xl:translate-x-12">
               <div className="mb-7 inline-flex items-center gap-2 border-l-2 border-[#eda71e] pl-3 text-xs font-bold uppercase tracking-[0.22em] text-white/70">
                 Oficina especializada na Mooca
               </div>
